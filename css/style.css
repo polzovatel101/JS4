@@ -1,0 +1,51 @@
+.menu__item{
+    display: inline-block;
+}
+
+.menu__button{
+    margin: 15px;
+}
+
+.menu__button:active{
+    border: none;
+}
+
+.text{
+    display: none;
+}
+
+.show{
+    display: block;
+}
+
+.text__box{
+    position: relative;
+}
+
+.registered{
+    display: block;
+    margin: 20px 50px;
+    position: relative;
+}
+
+.helped__box{
+    display: none;
+    position: absolute;
+    left: 230px;
+    border: 1px solid grey;
+}
+
+.e-mail{
+    top: 100px;
+    padding: 15px;
+}
+
+.password{
+    top: 180px;
+    padding: 15px;
+}
+
+.number{
+    top: 260px;
+    padding: 15px;
+}
