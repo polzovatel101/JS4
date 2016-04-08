@@ -10,17 +10,33 @@ $(function () {
     }
 
     function showHelp($elem) {
-        var index = $elem.index();
+        var tooltipText = $elem.attr('data-title');
 
-        $('.helped__box').eq(index).addClass('show').siblings().removeClass('show');
+        $elem.after('<div class="tooltip">' + tooltipText + '</div>').next('.tooltip').fadeIn(300);
     }
 
-    $('.menu__button').on('click', function () {
+    function hideHelp($elem) {
+        var $tooltip = $elem.siblings('.tooltip');
+        $tooltip.fadeOut(300, removeTooltip());
+        removeTooltip();
+
+        function removeTooltip() {
+            $tooltip.siblings('.tooltip').remove();
+        }
+    }
+
+    var $inputField = $('input');
+
+    $('.menu__button').on('hover', function () {
         showContent($(this));
     });
 
 
-    $('.registered').on('click', function () {
+    $inputField.on('mouseenter', function () {
         showHelp($(this));
+    });
+
+    $inputField.on('mouseleave', function () {
+        hideHelp($(this));
     })
 });

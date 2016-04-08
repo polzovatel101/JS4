@@ -22,30 +22,28 @@
     position: relative;
 }
 
-.registered{
+label{
     display: block;
-    margin: 20px 50px;
+    margin: 20px;
     position: relative;
 }
 
-.helped__box{
+label span{
+    display: inline-block;
+    width: 80px;
+}
+
+.tooltip{
     display: none;
     position: absolute;
-    left: 230px;
+    top: -6px;
+    left: 245px;
     border: 1px solid grey;
+    box-shadow: 0 0 3px rgb(0,0,0);
+    padding: 5px;
+    border-radius: 3px;
 }
 
-.e-mail{
-    top: 100px;
-    padding: 15px;
-}
-
-.password{
-    top: 180px;
-    padding: 15px;
-}
-
-.number{
-    top: 260px;
-    padding: 15px;
+button{
+    margin-left: 100px;
 }

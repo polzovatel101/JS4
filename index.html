@@ -26,11 +26,17 @@
     </ul>
 </div>
 <div class="second">
-    <form action="#">
-        <span class="registered">E-mail</span><input class="registered" name="registered__form" type="email"><span class="helped__box e-mail">Введите сюда свой e-mail</span>
-        <span class="registered">Password</span><input class="registered" name="registered__form" type="password"><span class="helped__box password">Введите сюда свой пароль</span>
-        <span class="registered">Number</span><input class="registered" name="registered__form" type="number"><span class="helped__box number">Введите сюда свой номер мобильного телефона</span>
-        <button class="registered" name="registered__form">Sign in</button>
+    <form action="#" id="registered__form">
+        <label for="registered__form"><span>E-mail</span><input class="registered__form" type="email" data-title="Введите сюда свой e-mail"></label>
+        <!--<span class="helped__box e-mail text ">Введите сюда свой e-mail</span>-->
+
+        <label for="registered__form"><span>Password</span><input class="registered__form" type="password" data-title="Введите сюда свой пароль"></label>
+        <!--<span class="helped__box password text">Введите сюда свой пароль</span>-->
+
+        <label for="registered__form"><span>Number</span><input class="registered__form" type="number" data-title="Введите сюда свой номер мобильного телефона"></label>
+        <!--<span class="helped__box number text">Введите сюда свой номер мобильного телефона</span>-->
+
+        <button class="registered">Sign in</button>
     </form>
 </div>
 </body>
