@@ -27,7 +27,7 @@ $(function () {
 
     var $inputField = $('input');
 
-    $('.menu__button').on('hover', function () {
+    $('.menu__button').on('click', function () {
         showContent($(this));
     });
 
