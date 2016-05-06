@@ -3,7 +3,7 @@
 }
 
 .menu__button{
-    margin: 15px;
+    margin: 10px;
 }
 
 .menu__button:active{
@@ -12,6 +12,9 @@
 
 .text{
     display: none;
+    list-style: none;
+    padding: 15px;
+    border: 1px solid grey;
 }
 
 .show{
@@ -20,6 +23,9 @@
 
 .text__box{
     position: relative;
+    margin-bottom: 50px;
+    background-color: gainsboro;
+    font-family: "Calibri Light";
 }
 
 label{
